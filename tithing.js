@@ -61,7 +61,7 @@ async function automateDonation(tithingAmount = '1') {
         if (loginFailed) {
             return;  // Stop the script if login failed
         } else {
-            await page.waitForNavigation();
+            // await page.waitForNavigation();
             console.log('Login successful, navigating to donations page.');
             await page.goto('https://donations.churchofjesuschrist.org/donations/#/donation/step1', { waitUntil: 'networkidle2' });
         }
